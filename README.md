@@ -1,9 +1,9 @@
 # Chess
 
-##Windows:
+## Windows:
 
 pip install arcade
 
-##MacOS or Linux type:
+## MacOS or Linux type:
 
 pip3 install arcade
