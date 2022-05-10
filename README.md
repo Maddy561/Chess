@@ -4,6 +4,6 @@
 
 pip install arcade
 
-## MacOS or Linux type:
+## MacOS or Linux:
 
 pip3 install arcade
