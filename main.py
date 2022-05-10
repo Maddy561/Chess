@@ -1,7 +1,7 @@
 import arcade
 
 SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 600
+SCREEN_HEIGHT = 800
 
 
 class ChessGame(arcade.Window):
@@ -10,7 +10,7 @@ class ChessGame(arcade.Window):
     def __init__(self, width, height):
         super().__init__(width, height)
 
-        arcade.set_background_color(arcade.color.AMAZON)
+        arcade.set_background_color(arcade.color.WHEAT)
 
     def setup(self):
         # Set up your game here
@@ -20,6 +20,10 @@ class ChessGame(arcade.Window):
         """ Render the screen. """
         arcade.start_render()
         # Your drawing code goes here
+        for i in range(8):
+            for j in range(8):
+                if (i+j) % 2 == 1:
+                    arcade.draw_lrtb_rectangle_filled(100*i,100*(i+1),100*(j+1),100*j, arcade.color.DARK_BROWN)
 
     def update(self, delta_time):
         """ All the logic to move, and the game logic goes here. """
